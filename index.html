@@ -13,13 +13,29 @@
     <h2>Calculate the Golden Ratio</h2>
     <br>
     <h3>What's the length of Side A</h3>
-    <input type = 'number' placeholder = 'Type Side A here'></input>
+    <input type = 'number' placeholder = 'Type Side A here' id = 'a'></input>
     <br>
     <h3>What's the length of Side B</h3>
-    <input type = 'number' placeholder = 'Type Side B here'></input>
+    <input type = 'number' placeholder = 'Type Side B here' id = 'b'></input>
     <br>
-    <button>Calculate!</button>
-    <p class='text'>Website created by Dillon de Silva</p>
+    <button onclick = 'calculate'>Calculate!</button>
+    <br>
+    <p class = 'text'></p>
+    <p class='text' id = 'answer'>Website created by Dillon de Silva</p>
   </div>
+<script>
+  function calculate () {
+    var a = document.getElementById('a').value;
+    var b = document.getElementById('b').value;
+
+    var answer = document.getElementById('answer');
+
+    if (Math.round((a/b * 10)) === 1.6) {
+      answer.innerHTML = 'Hooray! The dimensions you gave are approximately in the Golden Ratio';
+    } else {
+      answer.innerHTML = 'Oh No! The dimensions you gave are not in the Golden Ratio';
+    }
+  }
+</script>
 </body>
 </html>
