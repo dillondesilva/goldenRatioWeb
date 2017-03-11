@@ -35,3 +35,20 @@ input {
   border: solid black;
   font-size: 16px;
 }
+
+h3 {
+  color: black;
+  text-align: left;
+  margin-left: 1.5%;
+  font-family: Century Gothic, sans-serif;
+}
+
+button {
+  color: black;
+  background-color: white; 
+  text-align: left;
+  margin-left: 1.5%;
+  font-family: Century Gothic, sans-serif;
+  border: solid black;
+  font-size: 16px;
+}
