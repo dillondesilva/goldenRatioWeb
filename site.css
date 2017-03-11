@@ -1,0 +1,13 @@
+body {
+  background: purple;
+  background: -webkit-linear-gradient(left, purple , aqua);
+}
+
+.title {
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 27px;
+  font-family: Century Gothic, sans-serif;
+  font-weight: bold;
+}
