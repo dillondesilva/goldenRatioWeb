@@ -12,12 +12,14 @@ body {
 }
 
 h2 {
+  color: #D4AF37
   text-align: left;
   margin-left: 1.5%;
+  font-family: Century Gothic, sans-serif
 }
 
 .text {
-  color: #D4AF37;
+  color: black;
   text-align: justify;
   font-family: Century Gothic, sans-serif;
   font-weight: bold;
