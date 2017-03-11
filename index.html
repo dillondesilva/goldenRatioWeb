@@ -30,7 +30,7 @@
 
     var answer = document.getElementById('answer');
 
-    if (Math.round((a/b * 10)) === 1.6) {
+    if (Math.round((a/b * 10) / 10) === 1.6) {
       answer.innerHTML = 'Hooray! The dimensions you gave are approximately in the Golden Ratio';
     } else {
       answer.innerHTML = 'Oh No! The dimensions you gave are not in the Golden Ratio';
