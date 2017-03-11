@@ -1,13 +1,24 @@
 body {
-  background: purple;
-  background: -webkit-linear-gradient(left, purple , aqua);
+  background: -webkit-linear-gradient(left, 	#D4AF37 , #484749);
 }
 
 .title {
-  color: black;
+  color: #D4AF37;
   text-align: center;
   text-decoration: underline;
   font-size: 27px;
+  font-family: Century Gothic, sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 1.5%;
+}
+
+.text {
+  color: #D4AF37;
+  text-align: justify;
   font-family: Century Gothic, sans-serif;
   font-weight: bold;
 }
