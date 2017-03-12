@@ -22,10 +22,6 @@
     <button onclick = 'calculate()'>Calculate!</button>
     <br>
     <p class = 'text' id = 'answer'></p>
-    <h3 id = 'workingOutTitle'></h3>
-    <p class = 'text' id = 'workingOutl1'></p>
-    <p class = 'text' id = 'workingOutl2'></p>
-    <p class = 'text' id = 'workingOutl3'></p>
     <p class='text'>Website created by Dillon de Silva</p>
   </div>
 <script>
@@ -34,14 +30,7 @@
     var b = document.getElementById('b').value;
 
     var answer = document.getElementById('answer');
-    var workingOutTitle = document.getElementById('workingOutTitle');
-    var workingOutl1 = document.getElementById('workingOutl1');
-    var workingOutl2 = document.getElementById('workingOutl2');
-    var workingOutl3 = document.getElementById('workingOutl3');
-
     var aDividedByB = Math.round(a/b * 10) / 10;
-    var totalDividedByA = Math.round((a + b) /a * 10) / 10;
-    var aPlusB = a + b;
 
     if (aDividedByB === 1.6) {
       answer.innerHTML = 'Hooray! The dimensions you gave are approximately in the Golden Ratio';
@@ -49,16 +38,6 @@
       answer.innerHTML = 'Oh No! The dimensions you gave are not in the Golden Ratio';
     }
 
-    workingOutTitle.innerHTML = 'Working Out';
-    workingOutl2.innerHTML = 'The total length of sides a + b, ' + aPlusB + ',divided by the length of side a, ' + a.toString() + 'to 1 decimal place = ' + totalDividedByA;
-    workingOutl1.innerHTML = 'Side a, ' + a.toString() + ', divided by the shorter side, ' + b.toString() + 'to one decimal place = ' + aDividedByB ;
-
-    if (aDividedByB === 1.6) {
-      workingOutl3.innerHTML = 'The result in line one is the same as the one in line two. They both equal 1.6 which is also the value of 𝛗 to one decimal place. Your dimensions are in the golden ratio!';
-    } else {
-      workingOutl3.innerHTML = 'The result in line one is not the same as the one in line two. Both of the results do not equal 1.6 which is also the value of 𝛗 to one decimal place. Your dimensions are not in the golden ratio!';
-      }
-  }
 </script>
 </body>
 </html>
