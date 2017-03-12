@@ -22,7 +22,7 @@
     <button onclick = 'calculate()'>Calculate!</button>
     <br>
     <p class = 'text' id = 'answer'></p>
-    <p class='text'>Website created by Dillon de Silva</p>
+    <p class='text' style= {'text-align:center;'}>Website created by Dillon de Silva</p>
   </div>
 <script>
   function calculate () {
@@ -30,9 +30,8 @@
     var b = document.getElementById('b').value;
 
     var answer = document.getElementById('answer');
-    var aDividedByB = Math.round(a/b * 10) / 10;
 
-    if (aDividedByB === 1.6) {
+    if (Math.round(a/b * 10) / 10 === 1.6) {
       answer.innerHTML = 'Hooray! The dimensions you gave are approximately in the Golden Ratio';
     } else {
       answer.innerHTML = 'Oh No! The dimensions you gave are not in the Golden Ratio';
