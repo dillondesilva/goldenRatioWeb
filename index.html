@@ -34,11 +34,16 @@
     var a = document.getElementById('a').value;
     var b = document.getElementById('b').value;
 
+    var math1 = a + b ÷ a;
+    var math2 = a ÷ b
+
     var answer = document.getElementById('answer');
     var workingOut = document.getElementById('workingOut');
     var l1 = document.getElementById('l1');
     var l2 = document.getElementById('l2');
     var l4 = document.getElementById('l4');
+
+    workingOut.innerHTML = 'Working Out'
 
     if (Math.round(a/b * 10) / 10 === 1.6) {
       answer.innerHTML = 'Hooray! The dimensions you gave are approximately in the Golden Ratio';
@@ -50,6 +55,7 @@
 
     l1.innerHTML = 'First recall the '+ 'formula, ' + '(a + b) ÷ a = a ÷ b = 𝛗';
     l2.innerHTML = 'Sub in our values, (' + a + ' + ' + b + ') ÷ ' + a + ' = ' + a + ' ÷ ' + b + ' = 𝛗';
+    l3.innerHTML = l3.innerHTML = 'Simplify the equation and round to 1 decimal place, ' + math1 + ' = ' + math2 + ' = 𝛗 ';
   }
 
 </script>
