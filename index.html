@@ -35,8 +35,8 @@
     var b = document.getElementById('b').value;
 
     var addition = a + b;
-    var math1 = addition/a;
-    var math2 = a/b
+    var math1 = Math.round(addition/a);
+    var math2 = Math.round(a/b);
 
     var answer = document.getElementById('answer');
     var workingOut = document.getElementById('workingOut');
