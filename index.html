@@ -34,9 +34,8 @@
   function calculate () {
     var a = document.getElementById('a').value;
     var b = document.getElementById('b').value;
-
-    var addition = (a + b);
-    var math1 = Math.round(addition/a * 10) / 10;
+    
+    var math1 = Math.round((a + b)/a * 10) / 10;
     var math2 = Math.round(a/b * 10) / 10;
 
     var answer = document.getElementById('answer');
