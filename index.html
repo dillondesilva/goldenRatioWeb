@@ -21,6 +21,11 @@
     <button onclick = 'calculate()'>Calculate!</button>
     <br>
     <p class = 'text' id = 'answer'></p>
+    <h2 id = 'workingOut'></h2>
+    <p class = 'text' id = 'l1'></p>
+    <p class = 'text' id = 'l2'></p>
+    <p class = 'text' id = 'l3'></p>
+    <p class = 'text' id = 'l4'></p>
     <p class='text' style= {'text-align:center;'}>Website created by Dillon de Silva. To view the code, click here <a href = 'https://github.com/codetilldrop/goldenRatioWeb'>https://github.com/codetilldrop/goldenRatioWeb</a></p>
   </div>
 <script>
@@ -29,11 +34,26 @@
     var b = document.getElementById('b').value;
 
     var answer = document.getElementById('answer');
+    var workingOut = document.getElementById('workingOut');
+    var l1 = document.getElementById('l1');
+    var l2 = document.getElementById('l2');
+    var l3 = document.getElementById('l3');
+    var l4 = document.getElementById('l4');
 
     if (Math.round(a/b * 10) / 10 === 1.6) {
       answer.innerHTML = 'Hooray! The dimensions you gave are approximately in the Golden Ratio';
     } else {
       answer.innerHTML = 'Oh No! The dimensions you gave are not in the Golden Ratio';
+    }
+
+    l1.innerHTML = 'First recall the formula, (a + b) ÷ a = a ÷ b = 𝛗';
+    l2.innerHTML = 'Sub in our values, (' + toString(a) + ' + ' + toString(b) + ' ÷ ' + toString(a) + ' = ' + toString(a) + ' ÷ ' + toString(b) + ' = 𝛗';
+    l3.innerHTML = 'Simplify the equation and round to 1 decimal place, ' + toString((a + b) ÷ a) + ' = ' + toString(a ÷ b) + ' = 𝛗 ';
+
+    if (Math.round(a/b * 10) / 10 === 1.6) {
+      l4.innerHTML = 'The working out says your dimensions are in the golden ratio!';
+    } else {
+      l4.innerHTML = 'The working out says your dimensions are not in the golden ratio!';
     }
   }
 
