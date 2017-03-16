@@ -35,9 +35,9 @@
     var a = document.getElementById('a').value;
     var b = document.getElementById('b').value;
 
-    var addition = a + b;
-    var math1 = addition/a;
-    var math2 = a/b;
+    var addition = (a + b);
+    var math1 = Math.round(addition/a * 10) / 10;
+    var math2 = Math.round(a/b * 10) / 10;
 
     var answer = document.getElementById('answer');
     var workingOut = document.getElementById('workingOut');
@@ -57,7 +57,7 @@
 
     l1.innerHTML = 'First recall the '+ 'formula, ' + '(a + b) ÷ a = a ÷ b = 𝛗';
     l2.innerHTML = 'Sub in our values, (' + a + ' + ' + b + ') ÷ ' + a + ' = ' + a + ' ÷ ' + b + ' = 𝛗';
-    l3.innerHTML = l3.innerHTML = 'Simplify the equation and round to 1 decimal place, ' + math1 + ' = ' + math2 + ' = 𝛗 ';
+    l3.innerHTML = l3.innerHTML = 'Simplify the equation to 1 decimal place, ' + math1 + ' = ' + math2 + ' = 𝛗 ';
   }
 
 </script>
