@@ -48,15 +48,16 @@
 
     if (Math.round(a/b * 10) / 10 === 1.6) {
       answer.innerHTML = 'Hooray! The dimensions you gave are approximately in the Golden Ratio';
+      l3.innerHTML = 'Simplify the equation to 1 decimal place, ' + math1 + ' = ' + math2 + ' = 𝛗 ';
       l4.innerHTML = 'The working out says your dimensions are approximately in the golden ratio when rounded to 1 decimal place!';
     } else {
       answer.innerHTML = 'Oh No! The dimensions you gave are not in the Golden Ratio';
+      l3.innerHTML = 'Simplify the equation to 1 decimal place, ' + math1 + ' ≠ ' + math2 + ' ≠ 𝛗 ';
       l4.innerHTML = 'The working out says your dimensions are not in the golden ratio!';
     }
 
     l1.innerHTML = 'First recall the '+ 'formula, ' + '(a + b) ÷ a = a ÷ b = 𝛗';
     l2.innerHTML = 'Sub in our values, (' + a + ' + ' + b + ') ÷ ' + a + ' = ' + a + ' ÷ ' + b + ' = 𝛗';
-    l3.innerHTML = l3.innerHTML = 'Simplify the equation to 1 decimal place, ' + math1 + ' = ' + math2 + ' = 𝛗 ';
   }
 
 </script>
